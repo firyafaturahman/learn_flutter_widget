@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widget_ui/widgets/sample_flexible_expanded.dart';
-import 'package:widget_ui/widgets/sample_navbar.dart';
+import 'package:widget_ui/widgets/sample_dialog_bottom_sheet.dart';
+// import 'package:widget_ui/widgets/sample_flexible_expanded.dart';
+// import 'package:widget_ui/widgets/sample_navbar.dart';
 // import 'package:widget_ui/widgets/sample_card.dart';
 // import 'package:widget_ui/widgets/sample_column_row.dart';
 // import 'package:widget_ui/widgets/sample_container.dart';
@@ -19,14 +20,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        //
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          //
 
-        primarySwatch: Colors.blue,
-      ),
-      home: const SampleNavbar(),
-    );
+          primarySwatch: Colors.blue,
+        ),
+        home: const SampleDialogAndBottomSheet());
   }
 }
