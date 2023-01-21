@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatefulWidget {
-  final String textData = 'data';
+  final String textData = '';
 
   const DetailPage({super.key, required String textData});
 
@@ -22,7 +22,7 @@ class _DetailPageState extends State<DetailPage> {
         children: [
           ElevatedButton(
             onPressed: () {
-              Navigator.popAndPushNamed(context, '/home');
+              Navigator.pop(context);
             },
             child: const Text('Back to home'),
           ),
