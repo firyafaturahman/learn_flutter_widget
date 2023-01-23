@@ -30,10 +30,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
-      initialRoute: '/home',
+      initialRoute: '/detail',
       routes: {
         '/home': (context) => const HomePage(),
-        '/detail': (context) => const DetailPage(
+        '/detail': (context) => DetailPage(
               textData: 'Data from home page',
             ),
       },
